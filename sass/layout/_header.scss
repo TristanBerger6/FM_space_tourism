@@ -18,7 +18,7 @@
             margin-right: -3rem;
         }
         nav{
-            min-width : fit-content;
+            min-width : max-content;
             order : 2;
         }
     }
@@ -33,7 +33,8 @@
     .nav-bar{
         --gap: clamp(1.5rem, 3vw, 3.5rem);
         --underline-gap: 2rem;
-        background: hsl( var(--clr-black) / .95);
+        background: hsl( var(--clr-dark) / .95);
+
         @supports (backdrop-filter: blur(2rem)) { // if browser supports the backdrop filter property
             background: hsl( var(--clr-white) / 0.04);
             backdrop-filter: blur(2rem);

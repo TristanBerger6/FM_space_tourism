@@ -376,7 +376,7 @@ h1, h2, h3, h4, p {
     margin-right: -3rem;
   }
   .primary-header nav {
-    min-width: fit-content;
+    min-width: max-content;
     order: 2;
   }
 }
@@ -391,7 +391,7 @@ h1, h2, h3, h4, p {
 .primary-header .nav-bar {
   --gap: clamp(1.5rem, 3vw, 3.5rem);
   --underline-gap: 2rem;
-  background: hsl(var(--clr-black)/0.95);
+  background: hsl(var(--clr-dark)/0.95);
 }
 @supports (backdrop-filter: blur(2rem)) {
   .primary-header .nav-bar {
