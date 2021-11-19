@@ -6,7 +6,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
@@ -25,7 +24,7 @@ Users should be able to:
 
 ### Built with
 
-This project was built using HTML/CSS and vanilla JS. First time using custom properties and utility classes. 
+This project was built using HTML/CSS and vanilla JS. First time using custom properties and utility classes.
 
 ### Links
 
