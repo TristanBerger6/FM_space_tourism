@@ -20,7 +20,7 @@ body{
     p{
         margin-block : 1.2rem;
         line-height : 1.5rem;
-        font-size : 15px;
+        font-size : var(--fs-400);
     }
     @include small-up{
         background-position: center center;
