@@ -1,0 +1,11 @@
+{
+  "name": "space-tourism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

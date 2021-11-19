@@ -1,0 +1,45 @@
+// FOR SCREEN BIGGER THAN 576px
+@mixin small-up {
+    @media all and (min-width: #{$screen-sm-min}) {
+      @content;
+    }
+  }
+
+// FOR SCREEN DMALLER THAN 576px
+@mixin small-down {
+  @media all and (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+  
+// FOR SCREEN BIGGER THAN 768px
+  @mixin medium-up {
+    @media all and (min-width: #{$screen-md-min}) {
+      @content;
+    }
+  }
+
+// FOR SCREEN SMALLER THAN 768px
+  @mixin medium-down {
+    @media all and (max-width: #{$screen-md-min}) {
+      @content;
+    }
+  }
+  
+
+  // FLEXBOX
+
+@mixin flex($justify, $align: center, $direction: row, $wrap: wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin grid_eq($columns,$row, $gap: 0px) {
+  display: grid;
+  grid-gap: $gap;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-template-rows: repeat($row, 1fr);
+}

@@ -1,0 +1,88 @@
+
+
+
+.primary-header{
+    justify-content: space-between;
+    align-items: center;
+
+    @include medium-up{
+        margin: 2.5rem 0;
+        &::after{
+            content :'';
+            display : block;
+            position : relative;
+            width : 100%;
+            height : 1px;
+            background: hsl( var(--clr-white) / .25);
+            order: 1;
+            margin-right: -3rem;
+        }
+        nav{
+            min-width : fit-content;
+            order : 2;
+        }
+    }
+
+    .logo{
+        margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+        @include small-down{
+            transform : scale(0.8);
+        }
+    }
+
+    .nav-bar{
+        --gap: clamp(1.5rem, 3vw, 3.5rem);
+        --underline-gap: 2rem;
+        background: hsl( var(--clr-black) / .95);
+        @supports (backdrop-filter: blur(2rem)) { // if browser supports the backdrop filter property
+            background: hsl( var(--clr-white) / 0.04);
+            backdrop-filter: blur(2rem);
+        }
+        span{
+            font-weight: 700;
+            margin-right : .3rem;
+            display : inline;
+        }
+        @include small-down{
+            position : fixed;
+            z-index : 999;
+            inset : 0 0 0 30%;
+            padding: min(10rem, 15vh) 2rem;
+            flex-direction : column;
+            --gap : 0;
+            --underline-gap : 1rem; 
+            transform : translateX(100%);
+            transition : transform 1s ease-in-out;
+            &.underline-indicators > .active {
+                border-bottom: 0;
+            }
+        }
+        @include small-up{
+            padding : 0 clamp(3rem, 7vw,10rem);
+            span{
+                display : none;
+            }
+        }
+        @include medium-up{
+            span{
+                display : inline;    
+            }
+        }
+    }
+
+    .mobile-nav-toggle {
+        display: none;
+        @include small-down{
+            display : block;
+            position: absolute;
+            z-index: 2000;
+            right: 1rem;
+            top: 2rem;
+            border : 0;
+            background :url("../../assets/shared/icon-hamburger.svg");
+            background-repeat: no-repeat;
+            width: 1.3rem;
+            aspect-ratio: 1;
+        }
+    }
+}
