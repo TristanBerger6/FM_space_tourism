@@ -619,18 +619,25 @@ body {
   .crew .grid-container {
     grid-template-columns: minmax(1rem, 1fr) minmax(0, 40rem) minmax(0, 20rem) minmax(1rem, 1fr);
     justify-items: start;
-    align-content: end;
+    align-content: start;
     margin-bottom: 5rem;
-    height: 75vh;
+    height: 50rem;
     grid-template-areas: ". title image ." ". content image ." ". tabs image .";
   }
   .crew .grid-container > img {
     max-width: 90%;
+    max-height: 30rem;
     align-self: end;
     grid-column: span 2;
   }
   .crew .grid-container > .dot-indicators {
     align-self: end;
+  }
+  .crew .grid-container > .numbered-title {
+    align-self: start;
+  }
+  .crew .grid-container article {
+    height: 30rem;
   }
 }
 

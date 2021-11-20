@@ -45,7 +45,7 @@
     {
       "name": "Douglas Hurley",
       "images": {
-        "png": "./assets/crew/image-douglas-hurley.png",
+        "png": "./assets/crew/image-douglas-hurley-resized.png",
         "webp": "./assets/crew/image-douglas-hurley.webp"
       },
       "role": "Commander",
@@ -54,7 +54,7 @@
     {
       "name": "Mark Shuttleworth",
       "images": {
-        "png": "./assets/crew/image-mark-shuttleworth.png",
+        "png": "./assets/crew/image-mark-shuttleworth-resized.png",
         "webp": "./assets/crew/image-mark-shuttleworth.webp"
       },
       "role": "Mission Specialist",
@@ -72,7 +72,7 @@
     {
       "name": "Anousheh Ansari",
       "images": {
-        "png": "./assets/crew/image-anousheh-ansari.png",
+        "png": "./assets/crew/image-anousheh-ansari-resized.png",
         "webp": "./assets/crew/image-anousheh-ansari.webp"
       },
       "role": "Flight Engineer",
