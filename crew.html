@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./public/css/main.css">
   <script src="nav.js" async></script>
   <script src="crew.js" async></script>
+  <script src="tabs.js" async></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 
@@ -39,11 +40,11 @@
 
   <main id="main" class="grid-container flow">
     <h1 class="numbered-title"><span aria-hidden="true">02</span> Meet your crew</h1>
-    <div class="dot-indicators flex">
-      <button id="btCom" aria-selected="true"><span class="sr-only">Commander</span></button>
-      <button id="btSpe" aria-selected="false"><span class="sr-only">Mission Specialist</span></button>
-      <button id="btPil" aria-selected="false"><span class="sr-only">Pilot</span></button>
-      <button id="btEng" aria-selected="false"><span class="sr-only">Flight Engineer</span></button>
+    <div class="dot-indicators flex" role="tablist">
+      <button role="tab" tabindex="0"  id="btCom" aria-selected="true"><span class="sr-only">Commander</span></button>
+      <button role="tab" tabindex="-1" id="btSpe" aria-selected="false"><span class="sr-only">Mission Specialist</span></button>
+      <button role="tab" tabindex="-1" id="btPil" aria-selected="false"><span class="sr-only">Pilot</span></button>
+      <button role="tab" tabindex="-1" id="btEng" aria-selected="false"><span class="sr-only">Flight Engineer</span></button>
     </div>
     <article class="crew-details flow">
       <h2 id="crew-role" class="fs-600 ff-serif uppercase">Commander</h2>

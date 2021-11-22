@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./public/css/main.css">
   <script src="nav.js" async></script>
   <script src="technology.js" async></script>
+  <script src="tabs.js" async></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 
@@ -39,10 +40,10 @@
 
   <main id="main" class="grid-container flow">
     <h1 class="numbered-title"><span aria-hidden="true">03</span> Space launch 101</h1>
-    <div class="num-indicators flex">
-      <button id="btVeh" aria-selected="true">1<span class="sr-only">Launch vehicle</span></button>
-      <button id="btSpa" aria-selected="false">2<span class="sr-only">Spaceport</span></button>
-      <button id="btCap" aria-selected="false">3<span class="sr-only">Space capsule</span></button>
+    <div class="num-indicators flex" role="tablist">
+      <button role="tab" tabindex="0"id="btVeh" aria-selected="true">1<span class="sr-only">Launch vehicle</span></button>
+      <button role="tab" tabindex="-1"id="btSpa" aria-selected="false">2<span class="sr-only">Spaceport</span></button>
+      <button role="tab" tabindex="-1"id="btCap" aria-selected="false">3<span class="sr-only">Space capsule</span></button>
     </div>
     <article class="techno-details flow">
       <h2 class="fs-400 ff-sans-cond uppercase letter-spacing-3">The terminology ...</h2>

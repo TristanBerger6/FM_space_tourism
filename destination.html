@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./public/css/main.css">
   <script src="nav.js" async></script>
   <script src="destination.js" async ></script>
+  <script src="tabs.js" async></script>
   
   <title>Frontend Mentor | Space tourism website</title>
 
@@ -42,11 +43,11 @@
 
     <img id="planet-image" src="assets/destination/image-moon.png" alt="the moon">
 
-    <div class="tab-list underline-indicators flex">
-        <button id="btMoon"  aria-selected="true" class="uppercase ff-sans-cond text-light letter-spacing-2">Moon</button>
-        <button id="btMars" aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2">Mars</button>
-        <button id="btEuropa" aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2">Europa</button>
-        <button id="btTitan" aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2">Titan</button>
+    <div class="tab-list underline-indicators flex" role="tablist">
+        <button role="tab" tabindex="0" id="btMoon"  aria-selected="true" class="uppercase ff-sans-cond text-light letter-spacing-2" >Moon</button>
+        <button role="tab" tabindex="-1" id="btMars" aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2">Mars</button>
+        <button role="tab" tabindex="-1" id="btEuropa" aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2">Europa</button>
+        <button role="tab" tabindex="-1" id="btTitan" aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2">Titan</button>
     </div>
 
     <article class="destination-info">
