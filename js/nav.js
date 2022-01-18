@@ -9,12 +9,12 @@ eltMobNavToggle.addEventListener("click",()=>{
     if ( ariaExpended == 'false'){
         eltNavBar.classList.add('notranslate');
         eltMobNavIcon.setAttribute("aria-expanded","true");
-        eltMobNavToggle.style.backgroundImage = 'url("./assets/shared/icon-close.svg")';
+        eltMobNavToggle.classList.add('close');
     }
     else if ( ariaExpended == 'true'){
         eltNavBar.classList.remove('notranslate');
         eltMobNavIcon.setAttribute("aria-expanded","false");
-        eltMobNavToggle.style.backgroundImage = 'url("./assets/shared/icon-hamburger.svg")';
+        eltMobNavToggle.classList.remove('close');
     }
 })
 

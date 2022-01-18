@@ -428,9 +428,6 @@ h1, h2, h3, h4, p {
   .primary-header .nav-bar.notranslate {
     transform: translateX(0%);
   }
-  .primary-header .nav-bar.underline-indicators > .active {
-    border-bottom: 0;
-  }
 }
 @media all and (min-width: 576px) {
   .primary-header .nav-bar {
@@ -460,6 +457,9 @@ h1, h2, h3, h4, p {
     background-repeat: no-repeat;
     width: 1.3rem;
     aspect-ratio: 1;
+  }
+  .primary-header .mobile-nav-toggle.close {
+    background: url("../../assets/shared/icon-close.svg");
   }
 }
 
