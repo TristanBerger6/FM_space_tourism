@@ -24,7 +24,10 @@ Users should be able to:
 
 ### Built with
 
-This project was built using HTML/CSS and vanilla JS. First time using custom properties and utility classes.
+This project was built using HTML/CSS and vanilla JS. First time using custom properties and utility classes. 
+The site follows ARIA specifications, is responsive and uses JS to dynamically modify the content.
+
+![screenshot](./public/preview.PNG)
 
 ### Links
 
