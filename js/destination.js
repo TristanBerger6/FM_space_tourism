@@ -17,7 +17,7 @@ let eltTravel = document.getElementById("planet-travel");
 let contentJSON = null;
 
 async function loadJSON() {
-    const response = await fetch("data.json");
+    const response = await fetch("../data.json");
     const data = await response.json();   
     let promise = new Promise ((resolve,reject)=>{
         contentJSON = data;
@@ -53,6 +53,7 @@ function destinationSwap(event){
             eltDistance.innerHTML = contentJSON.destinations[i].distance;
             eltTravel.innerHTML = contentJSON.destinations[i].travel;
             eltImage.setAttribute("src",`${contentJSON.destinations[i].images.png}`);
+            eltImage.setAttribute("alt",`${contentJSON.destinations[i].name}`);
         }
     }
     

@@ -25,6 +25,9 @@
         opacity :0;
         transition: opacity 500ms linear,transform 600ms ease-in-out;
     }
+    &:focus{
+        outline : none;
+    }
 
     &:hover::after,&:focus::after{
         opacity : 1;
@@ -42,6 +45,7 @@
     background-color: hsl( var(--clr-white) / .25);
     &:hover,&:focus{
         background-color: hsl( var(--clr-white) / .5);
+        
     }
     &[aria-selected="true"]{
         background-color: hsl( var(--clr-white) / 1); 

@@ -17,7 +17,7 @@ let eltDesc = document.getElementById("techno-description");
 let contentJSON = null;
 
 async function loadJSON() {
-    const response = await fetch("data.json");
+    const response = await fetch("../data.json");
     const data = await response.json();   
     let promise = new Promise ((resolve,reject)=>{
         contentJSON = data;
@@ -49,7 +49,9 @@ function TechnoSwap(event){
             eltName.innerHTML = contentJSON.technology[i].name;
             eltDesc.innerHTML = contentJSON.technology[i].description;
             eltImagePort.setAttribute("src",`${contentJSON.technology[i].images.portrait}`);
+            eltImagePort.setAttribute("alt",`${contentJSON.technology[i].name}`);
             eltImageLand.setAttribute("src",`${contentJSON.technology[i].images.landscape}`);
+            eltImageLand.setAttribute("alt",`${contentJSON.technology[i].name}`);
         }
     }
     

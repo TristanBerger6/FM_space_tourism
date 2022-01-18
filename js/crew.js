@@ -17,7 +17,7 @@ let eltRole = document.getElementById("crew-role");
 let contentJSON = null;
 
 async function loadJSON() {
-    const response = await fetch("data.json");
+    const response = await fetch("../data.json");
     const data = await response.json();   
     let promise = new Promise ((resolve,reject)=>{
         contentJSON = data;
@@ -50,6 +50,7 @@ function CrewSwap(event){
             eltBio.innerHTML = contentJSON.crew[i].bio;
             eltRole.innerText = contentJSON.crew[i].role;
             eltImage.setAttribute("src",`${contentJSON.crew[i].images.png}`);
+            eltImage.setAttribute("alt",`${contentJSON.crew[i].name}`);
         }
     }
     

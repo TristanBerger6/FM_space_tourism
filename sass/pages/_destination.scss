@@ -21,6 +21,12 @@
             --gap : 2rem;
             grid-area : tabs;
             align-self: start;
+            button:focus{
+                outline: none;
+                border-color: hsl( var(--clr-white) / .5); 
+            }
+
+
         }
         &>.destination-info{
             grid-area : content;
